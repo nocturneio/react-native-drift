@@ -8,7 +8,6 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-package-lock.json
   
 
 # Xcode
@@ -27,9 +26,9 @@ xcuserdata
 *.moved-aside
 DerivedData
 *.hmap
-*.ip
+*.ipa
 *.xcuserstate
-Podfile.lock
+project.xcworkspace
       
 
 # Android/IntelliJ
