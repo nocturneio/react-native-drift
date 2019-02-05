@@ -43,9 +43,22 @@
 
 ## Usage
 ```javascript
-import RNDrift from 'react-native-drift';
+import Drift from 'react-native-drift';
 
-// TODO: What to do with the module?
-RNDrift;
+// Init Drift - https://app.drift.com/settings/livechat
+Drift.setup("YOUR API TOKEN");
+
+// Create a user
+Drift.registerUser("unique id of the user", "email");
+
+// Logout user
+Drift.logout();
+
+// Display conversations view
+Drift.showConversations();
+
+// Display create conversation view
+Drift.showCreateConversation();
+
 ```
   
