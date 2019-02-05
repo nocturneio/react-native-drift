@@ -1,6 +1,6 @@
 {
   "name": "react-native-drift",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple React Native wrapper for Drift.com platform",
   "main": "index.js",
   "scripts": {
