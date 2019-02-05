@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNDrift.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNDrift.m */; };
+		BCBE31DB6E28DA5F21E6D1B3 /* libPods-RNDrift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 078810F67BF16F2E389DC12F /* libPods-RNDrift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		078810F67BF16F2E389DC12F /* libPods-RNDrift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDrift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134814201AA4EA6300B7C361 /* libRNDrift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDrift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AB0BFB06901BFAB852691D /* Pods-RNDrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDrift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift.debug.xcconfig"; sourceTree = "<group>"; };
+		7E0582767DB84C07F4C9F1C7 /* Pods-RNDrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDrift.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNDrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDrift.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNDrift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDrift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBE31DB6E28DA5F21E6D1B3 /* libPods-RNDrift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +52,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5709987FFC016297DA7E823E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50AB0BFB06901BFAB852691D /* Pods-RNDrift.debug.xcconfig */,
+				7E0582767DB84C07F4C9F1C7 /* Pods-RNDrift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNDrift.h */,
 				B3E7B5891CC2AC0600A0062D /* RNDrift.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				5709987FFC016297DA7E823E /* Pods */,
+				E6BF504D358DB68134FECB5C /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		E6BF504D358DB68134FECB5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				078810F67BF16F2E389DC12F /* libPods-RNDrift.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,9 +87,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDrift" */;
 			buildPhases = (
+				25C7DF923526EA5E4A15B7C9 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
+				65411784007C7A1DDF5F1A1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +132,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C7DF923526EA5E4A15B7C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNDrift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65411784007C7A1DDF5F1A1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift-resources.sh",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation List View/ConversationListViewController.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation List View/List View Cell/ConversationListTableViewCell.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/ConnectionBarView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/AttachmentCollectionViewCell.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/ConversationMessageTableViewCell.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/MeetingMessageTableViewCell.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/ConversationEmptyStateView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/MessageTableHeaderView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/New Message View/NewMessageView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/NotificationView/AnnouncementExpandedView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/NotificationView/AnnouncementView.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/Schedule Meeting/ScheduleMeetingViewController.xib",
+				"${PODS_ROOT}/Drift/Drift/UI/DriftImages.xcassets",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationListViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationListTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConnectionBarView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AttachmentCollectionViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationMessageTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeetingMessageTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationEmptyStateView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MessageTableHeaderView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NewMessageView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AnnouncementExpandedView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AnnouncementView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ScheduleMeetingViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -202,9 +301,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AB0BFB06901BFAB852691D /* Pods-RNDrift.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -218,6 +318,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0582767DB84C07F4C9F1C7 /* Pods-RNDrift.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
