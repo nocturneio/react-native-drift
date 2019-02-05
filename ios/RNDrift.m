@@ -1,10 +1,14 @@
 
 #import "RNDrift.h"
 
-#import <Drift/Drift.h>
+#import "Drift/Drift.h"
 
 @implementation RNDrift
 
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(setup:(NSString *)id)
@@ -44,3 +48,4 @@ RCT_EXPORT_METHOD(showCreateConversation)
 }
 
 @end
+  
