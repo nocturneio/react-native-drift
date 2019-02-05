@@ -87,11 +87,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDrift" */;
 			buildPhases = (
-				25C7DF923526EA5E4A15B7C9 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
-				65411784007C7A1DDF5F1A1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,79 +130,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		25C7DF923526EA5E4A15B7C9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNDrift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65411784007C7A1DDF5F1A1D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift-resources.sh",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation List View/ConversationListViewController.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation List View/List View Cell/ConversationListTableViewCell.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/ConnectionBarView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/AttachmentCollectionViewCell.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/ConversationMessageTableViewCell.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/Conversation Cells/MeetingMessageTableViewCell.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/ConversationEmptyStateView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Conversation View/MessageTableHeaderView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/New Message View/NewMessageView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/NotificationView/AnnouncementExpandedView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/NotificationView/AnnouncementView.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/Schedule Meeting/ScheduleMeetingViewController.xib",
-				"${PODS_ROOT}/Drift/Drift/UI/DriftImages.xcassets",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationListViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationListTableViewCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConnectionBarView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AttachmentCollectionViewCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationMessageTableViewCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeetingMessageTableViewCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConversationEmptyStateView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MessageTableHeaderView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NewMessageView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AnnouncementExpandedView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AnnouncementView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ScheduleMeetingViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDrift/Pods-RNDrift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {

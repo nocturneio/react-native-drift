@@ -9,8 +9,9 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "NocturneLab",
+  "license": "MIT",
+  "repository": "https://github.com/nocturneio/react-native-drift",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
