@@ -1,0 +1,6 @@
+module Pods_RNDrift {
+  umbrella header "Pods-RNDrift-umbrella.h"
+
+  export *
+  module * { export * }
+}

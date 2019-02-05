@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - Drift (2.2.7):
+    - AlamofireImage (~> 3.0)
+    - ObjectMapper (~> 3.0)
+    - Starscream
+    - SVProgressHUD (~> 2.0)
+  - ObjectMapper (3.4.2)
+  - React (0.41.2):
+    - React/Core (= 0.41.2)
+  - React/Core (0.41.2):
+    - React/cxxreact
+    - React/yoga
+  - React/cxxreact (0.41.2):
+    - React/jschelpers
+  - React/jschelpers (0.41.2)
+  - React/yoga (0.41.2)
+  - Starscream (3.0.6)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.1)
+  - Drift (~> 2.2.7)
+  - React (from `../node_modules/react-native`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Drift
+    - ObjectMapper
+    - Starscream
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Drift: 89fa1d0d260168c17abcb98fbcdb0b2333c862d6
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  React: d77978754bb8030a3ccaa74fb7d4d82c543b7b03
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 9b35d378f45c1602fb1a19bd9a2fdec4cc9383f0
+
+COCOAPODS: 1.5.3

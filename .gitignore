@@ -27,11 +27,9 @@ xcuserdata
 *.moved-aside
 DerivedData
 *.hmap
-*.ipa
+*.ip
 *.xcuserstate
-project.xcworkspace
-Podfile
-Pods
+Podfile.lock
       
 
 # Android/IntelliJ
